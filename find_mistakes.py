@@ -48,7 +48,7 @@ def create_readme(mistakes):
     readme = open('README.md', 'w', encoding='utf-8')
     i = 1
     for key in mistakes:
-        readme.write(f'###{i} file name: {key}.json\n####Errors:'
+        readme.write(f'### {i} file name: {key}.json\n#### Errors:'
                      f'\n{mistakes[key]}\n**********************\n\n')
         i += 1
     readme.close()
